@@ -1,0 +1,416 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+body{
+    padding:0;
+    margin:0;
+    
+}
+
+.container{
+width:100%;
+padding:0;
+margin:0;
+}
+
+/* BEGINING OF NAVICATION */
+
+nav{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    color:white;
+	box-sizing: border-box;
+	justify-content: space-around;
+	font-size:1.3em;
+	font-weight:500;
+	position:sticky;
+	top:0;
+	z-index: 999;
+    
+}
+
+
+.home{
+width:33.33%; 
+padding-top:10px; 
+padding-bottom:10px;
+color:white;
+background-color:#999999e3;
+box-sizing: border-box;
+text-align: center;
+}
+
+.home2{
+	width:33.33%; 
+	padding-top:10px; 
+	padding-bottom:10px;
+	color:white;
+	background-color:#777777e3;
+	box-sizing: border-box;
+	text-align: center;
+	}
+
+	.home3{
+		width:33.33%; 
+		padding-top:10px; 
+		padding-bottom:10px;
+		color:white;
+		background-color:#555555e3;
+		box-sizing: border-box;
+		text-align: center;
+		}
+
+
+ a{
+    color:white;
+    text-decoration:none;
+}
+
+a:hover{
+	color: #f0b823;
+}
+
+/* END OF NAVIGATION */
+
+/* THIS IS FOR THE SLIDING IMAGES */
+
+.slider {
+	max-width: 100%;
+	height: 200px;
+	margin: 5px auto;
+	position: relative;
+  }
+  .slide1,.slide2,.slide3,.slide4,.slide5 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  }
+  .slide1 {
+	background: url(image/img1.jpg) no-repeat center;
+		background-size: cover;
+	  animation:fade 20s cubic-bezier(.8,0,0,.8) infinite;
+  -webkit-animation:fade 20s cubic-bezier(.8,0,0,.8) infinite;
+  
+  } 
+  .slide2 {
+	background: url(image/img2.jpg) no-repeat center;
+		background-size: cover;
+	  animation:fade2 20s cubic-bezier(.8,0,0,.8) infinite;
+  -webkit-animation:fade2 20s cubic-bezier(.8,0,0,.8) infinite;
+  }
+  .slide3 {
+	  background: url(image/img3.jpg)    no-repeat center;
+		background-size: cover;
+	  animation:fade3 20s cubic-bezier(.8,0,0,.8) infinite;
+  -webkit-animation:fade3 20s cubic-bezier(.8,0,0,.8) infinite;
+  }
+  @keyframes fade
+  {
+	0%   {opacity:1}
+	33.333% { opacity: 0}
+	66.666% { opacity: 0}
+	100% { opacity: 1}
+  }
+  @keyframes fade2
+  {
+	0%   {opacity:0}
+	33.333% { opacity: 1}
+	66.666% { opacity: 0 }
+	100% { opacity: 0}
+  }
+  @keyframes fade3
+  {
+	0%   {opacity:0}
+	33.333% { opacity: 0}
+	66.666% { opacity: 1}
+	100% { opacity: 0}
+  }
+
+  /* END OF SLIDING IMAGES */
+
+  main{
+	padding: 15px 0px; 
+	padding-top:25px;
+	box-sizing:border-box; 
+	background-color:white;
+	height:100%;
+  
+  }
+  
+  
+  
+ /* ABOUT SECTION */
+  
+  #about{
+	  font-size: 1em;
+	  font-weight: 400;
+	  line-height: 1.8em;
+	  font-size:1em;
+	  padding-top:15px;
+	  width:90%;
+	  margin:auto;
+	    }
+
+  #about a{
+	color: #212721;
+	text-decoration:underline;
+}
+  
+   h2{
+	  font-size: 1.8em;
+	  padding-bottom:20px;
+	  font-family: 'Montserrat', sans-serif;
+	  font-weight: 700;
+	  text-align: center;
+
+		  
+	  }
+	p{
+		font-family: 'Merriweather', serif;
+	}  
+
+	  #about p{
+		  padding-bottom:20px;
+	  }
+/* END OF ABOUT SECTION */
+	
+  
+#products{
+	padding-top:140px;
+	width:98%;
+	margin:auto;
+}
+
+#products h2{
+	text-align: center;
+	
+	}
+
+.machine-products{
+
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.machines a{
+	color:#f0b823;
+	font-family: 'Merriweather', serif;
+	font-size:1.1em;
+	text-decoration: underline;
+
+}
+
+.machine-products a:visited{
+	color:#f0b823;
+}
+
+
+
+  article{
+	  padding-top: 60px;
+	  width:100%;
+  }
+  
+  article img{
+	  width: 100%;
+	  box-shadow: 0px 6px 5px #ccc;
+	 
+  }
+  
+  article p{
+  text-align: center;
+  font-weight: 600;
+  padding-top:20px;
+  font-size:1.1em;
+  font-family: 'Merriweather', serif;
+
+  
+  }
+
+/* CONTACT FORM */
+
+
+  
+  #contact-form{
+   width: 100%;
+   margin-top:25%;
+   box-sizing:border-box;
+   padding-top:140px;
+   padding-bottom:40px;
+
+  }
+
+  form{
+	  margin-left:auto;
+	  margin-right:auto;
+	  padding-top:20px;
+	  width:100%;
+	  background-color:lightgrey;
+	  border-radius: 10px;
+  }
+
+  
+  #contact-form h2{
+	  text-align: center;
+	  font-size: 1.8em;
+	  padding-bottom:20px;
+	  font-family: 'Montserrat', sans-serif;
+	  font-weight: 700;
+
+  }
+  
+  #contact-form div{
+	  width:90%;
+	  padding-bottom:20px;
+	  box-sizing:border-box;
+	  margin-left: auto;
+	  margin-right: auto;
+
+  }
+  
+  input{
+	  width: 100%;
+	  height: 30px;
+	  font-size:1em;
+	  border-radius: 5px;
+	  box-sizing:border-box;
+	  font-family: 'Merriweather', serif;
+	  padding:20px 10px;
+
+  }
+
+#website{
+	  display:none;
+  }
+  
+ textarea{
+	  width: 100%;
+	  font-size:1em;
+	  border-radius: 5px;
+	  box-sizing:border-box;
+	  font-family: 'Merriweather', serif;
+	  padding:10px;
+
+
+  }
+  
+  .my-buttons{
+	  width: 100%;
+	  height:50px;
+	  background-color: #f0b823;
+	  font-weight: 700;
+	  font-size:1.2em;
+	  border-radius: 10px;
+	  margin-bottom: 10px;
+	  box-sizing:border-box;
+	  font-family: 'Merriweather', serif;
+
+  
+  
+  }
+  /* END OF CONTACT FORM */
+
+  
+  footer{
+	  width:100%;
+	  background-color:#212721;
+	  height: 70px;
+	  text-align: center;
+	  margin-top:30px;
+	  padding-top:50px;
+	  color: white;
+	  text-shadow: 1px 1px 2px #b0b4b0;
+	  font-family: 'Merriweather', serif;
+  }
+
+  @media (min-width:640px){
+
+	article{
+		width:45%;
+	}
+
+	#contact-form{
+		width: 95%;
+		margin:auto;
+		border-radius: 10px;
+	   }
+
+	   #products{
+		padding-top:140px;
+		width:95%;
+		margin:auto;
+	}
+
+  }
+
+  @media (min-width:1020px){
+
+	article{
+		width:30%;
+	}
+
+	#contact-form{
+		width: 90%;
+		margin:auto;
+		border-radius: 10px;
+	   }
+
+	   #products{
+		padding-top:140px;
+		width:90%;
+		margin:auto;
+	}
+
+
+
+
+  }
+  
+  
